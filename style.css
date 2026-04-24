@@ -57,9 +57,9 @@
   --sh-soft: 0 6px 22px -8px rgba(0,0,0,0.55);
 
   /* radii */
-  --r-1: 8px;
-  --r-2: 12px;
-  --r-3: 16px;
+  --r-1: 2px;
+  --r-2: 2px;
+  --r-3: 2px;
 
   /* preview */
   --preview-bg: #07090C;
@@ -98,10 +98,10 @@ body {
 /* scrollbars */
 .sc::-webkit-scrollbar { width: 8px; height: 8px; }
 .sc::-webkit-scrollbar-track { background: transparent; }
-.sc::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 4px; border: 2px solid transparent; background-clip: padding-box; }
+.sc::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 2px; border: 2px solid transparent; background-clip: padding-box; }
 .sc::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.12); background-clip: padding-box; border: 2px solid transparent; }
 
-:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 4px; }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 2px; }
 
 /* ── APP LAYOUT ─────────────────────────────────────── */
 .app {
@@ -150,10 +150,7 @@ body {
   font-size: 28px;
   line-height: 0.9;
   letter-spacing: -0.03em;
-  background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0.7) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #ffffff;
 }
 .logo-dot { color: var(--lime); -webkit-text-fill-color: var(--lime); }
 .brand-meta, .brand-sub, .brand-ver { display: none; }
@@ -315,7 +312,7 @@ textarea.font-display { font-size: 18px; line-height: 1.1; letter-spacing: -0.01
   background: transparent;
   border: none;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 2px;
   transition: background-color .15s, color .15s;
   text-align: center;
   font-family: inherit;
@@ -513,7 +510,7 @@ input[type="range"]:hover::-webkit-slider-thumb { transform: scale(1.15); }
 .sw-dot {
   width: 22px; height: 22px;
   flex-shrink: 0;
-  border-radius: 6px;
+  border-radius: 2px;
   border: 1px solid var(--border-2);
   box-shadow: 0 2px 6px rgba(0,0,0,0.35);
 }
@@ -526,7 +523,7 @@ input[type="range"]:hover::-webkit-slider-thumb { transform: scale(1.15); }
 .palette-grid > div {
   aspect-ratio: 1;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 2px;
   border: 1px solid var(--border-1);
   transition: transform .12s, box-shadow .12s;
 }
@@ -631,7 +628,7 @@ input[type="range"]:hover::-webkit-slider-thumb { transform: scale(1.15); }
   font-size: 12px;
   padding: 0 4px;
   transition: color .12s;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .lottie-remove:hover { color: var(--pink); }
 
@@ -691,9 +688,9 @@ input[type="range"]:hover::-webkit-slider-thumb { transform: scale(1.15); }
   content: '';
   position: absolute;
   inset: 0;
-  background:
+  /* background:
     radial-gradient(600px 400px at 30% 20%, rgba(124,146,255,0.10), transparent 60%),
-    radial-gradient(500px 400px at 80% 90%, rgba(206,255,0,0.06), transparent 60%);
+    radial-gradient(500px 400px at 80% 90%, rgba(206,255,0,0.06), transparent 60%); */
   pointer-events: none;
 }
 #canvas {
@@ -701,7 +698,7 @@ input[type="range"]:hover::-webkit-slider-thumb { transform: scale(1.15); }
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  border-radius: 6px;
+  border-radius: 2px;
   position: relative;
   z-index: 1;
   box-shadow:
@@ -735,7 +732,7 @@ input[type="range"]:hover::-webkit-slider-thumb { transform: scale(1.15); }
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
   border: 1px solid var(--border-2);
-  border-radius: 6px;
+  border-radius: 2px;
   font-variant-numeric: tabular-nums;
   pointer-events: none;
   z-index: 2;
